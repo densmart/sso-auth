@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  create_migration:*:
+    desc: Create a new database migration
+    vars:
+      NAME: '{{ index .MATCH 0}}'
+    cmds:
+      - echo "Creating migration {{.NAME}}..."
+      - tern new -m migrations/ {{.NAME}}
+      - echo "Migration '{{.NAME}}' created successfully."

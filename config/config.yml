@@ -1,0 +1,9 @@
+
+# logger settings
+logger:
+  level: ${LOG_LEVEL|debug}
+
+# database settings
+db:
+  postgres:
+    dsn: ${POSTGRES_DSN|postgres://user:pass@localhost:5432/authsso?sslmode=disabled}

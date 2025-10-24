@@ -15,13 +15,12 @@
 # vendor/
 
 logs/
-backend/cmd/local_build
+cmd/local_build
 .idea/
 
 .DS_Store
-backend/.env
+.env
 
-backend/vendor/*/
+vendor/*/
 .vscode/
-backend/static/logo/
-static/logo/
+

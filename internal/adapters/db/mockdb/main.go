@@ -11,7 +11,6 @@ var defaultCreatedAt = time.Date(2025, 5, 25, 10, 11, 12, 13, time.UTC)
 type MockDB struct{}
 
 func NewMockDB() *MockDB {
-	logger.Debugf("Using MockDB (no real connection)")
 	return &MockDB{}
 }
 

@@ -13,7 +13,7 @@ type UpdateRoleDTO struct {
 	IsPermitted *bool   `json:"is_permitted,omitempty"`
 }
 
-type SearchRoleDTO struct {
+type SearchRolesDTO struct {
 	BaseSearchRequestDTO
 	ID          *uint64 `form:"id"`
 	Name        *string `form:"name"`

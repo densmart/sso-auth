@@ -10,6 +10,9 @@ github.com/Masterminds/sprig
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
+# github.com/dgryski/dgoogauth v0.0.0-20190221195224-5a805980a5f3
+## explicit
+github.com/dgryski/dgoogauth
 # github.com/fsnotify/fsnotify v1.9.0
 ## explicit; go 1.17
 github.com/fsnotify/fsnotify
@@ -103,12 +106,10 @@ github.com/spf13/viper/internal/encoding/yaml
 github.com/spf13/viper/internal/features
 # github.com/stretchr/objx v0.5.2
 ## explicit; go 1.20
-github.com/stretchr/objx
 # github.com/stretchr/testify v1.11.1
 ## explicit; go 1.17
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/assert/yaml
-github.com/stretchr/testify/mock
 # github.com/subosito/gotenv v1.6.0
 ## explicit; go 1.18
 github.com/subosito/gotenv
@@ -131,6 +132,8 @@ go.uber.org/zap/zapcore
 go.yaml.in/yaml/v3
 # golang.org/x/crypto v0.43.0
 ## explicit; go 1.24.0
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
 golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/scrypt
 # golang.org/x/sys v0.37.0

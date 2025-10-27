@@ -1,3 +1,6 @@
+# app settings
+app:
+  name: ${APP_NAME|AuthSSO}
 
 # logger settings
 logger:

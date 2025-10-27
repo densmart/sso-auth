@@ -6,7 +6,7 @@ const (
 
 type Role struct {
 	BaseEntity
-	Name        string `db:"name"`
-	Slug        string `db:"slug"`
-	IsPermitted bool   `db:"is_permitted"`
+	Name        string `db:"name" json:"name"`
+	Slug        string `db:"slug" json:"slug"`
+	IsPermitted bool   `db:"is_permitted" json:"is_permitted"`
 }

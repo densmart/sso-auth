@@ -13,6 +13,7 @@ type Repo interface {
 	MigrationUp() error
 	MigrationDown() error
 	Roles
+	Users
 }
 
 func NewRepo(ctx context.Context, DBType string) (Repo, error) {

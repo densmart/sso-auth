@@ -21,6 +21,6 @@ func (db *PgDB) DeleteRole(id uint64) error {
 	return nil
 }
 
-func (db *PgDB) SearchRoles(filter dto.SearchRoleDTO) ([]entities.Role, int64, error) {
+func (db *PgDB) SearchRoles(filter dto.SearchRolesDTO) ([]entities.Role, uint64, error) {
 	return []entities.Role{}, 0, nil
 }

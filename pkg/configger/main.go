@@ -19,10 +19,9 @@ func InitConfig(cfgPath string, name string, ctype string) {
 
 	err := viper.ReadInConfig()
 	if err != nil {
-		log.Fatalf("Couldn't load configuration, cannot start. Terminating. Error: " + err.Error())
+		log.Printf("error loading config file: %s", err.Error())
+		log.Fatalf("couldn't load configuration, cannot start")
 	}
-	log.Println("Config loaded successfully...")
-	log.Println("Getting environment variables...")
 	for _, k := range viper.AllKeys() {
 		value := viper.GetString(k)
 		if strings.HasPrefix(value, "${") && strings.HasSuffix(value, "}") {
